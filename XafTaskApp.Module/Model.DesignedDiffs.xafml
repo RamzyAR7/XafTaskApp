@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="XafTaskApp">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="24.1.7.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="24.1.7.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="24.1.7.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="customer_ListView" AllowEdit="True" NewItemRowPosition="Top">
+      <Columns>
+        <ColumnInfo Id="customer_name" Width="422" />
+        <ColumnInfo Id="customer_mobile" Width="458" />
+        <ColumnInfo Id="customer_address" Index="2" Width="381" />
+      </Columns>
+    </ListView>
+    <DetailView Id="invoice_detail_DetailView">
+      <Items>
+        <PropertyEditor Id="invoice_detail_id" PropertyName="invoice_detail_id" />
+        <PropertyEditor Id="qun" ImmediatePostData="True" />
+        <PropertyEditor Id="total" AllowEdit="False" LookupEditorMode="Auto" />
+        <PropertyEditor Id="unit_price" ImmediatePostData="True" />
+      </Items>
+    </DetailView>
+    <ListView Id="invoice_detail_ListView" AllowEdit="True" NewItemRowPosition="Top">
+      <Columns>
+        <ColumnInfo Id="invoice_id" Width="228" />
+        <ColumnInfo Id="product_id" Width="249" />
+        <ColumnInfo Id="qun" Width="261" />
+        <ColumnInfo Id="unit_price" Width="264" />
+        <ColumnInfo Id="total" Width="260" />
+      </Columns>
+    </ListView>
+    <ListView Id="invoice_ListView" AllowEdit="True" NewItemRowPosition="Top">
+      <Columns>
+        <ColumnInfo Id="invoice_date" Width="601" />
+        <ColumnInfo Id="customer_id" Width="660" />
+      </Columns>
+    </ListView>
+    <DetailView Id="payment_DetailView">
+      <Items>
+        <PropertyEditor Id="customer_id" ImmediatePostData="True" />
+        <PropertyEditor Id="invoice_id" DataSourceCriteriaProperty="" DataSourceCriteria="customer_id = ?customer_id" ImmediatePostData="True" />
+        <PropertyEditor Id="payment_amount" DisplayFormat="{0:N2}" />
+      </Items>
+    </DetailView>
+    <ListView Id="payment_ListView" AllowEdit="True" NewItemRowPosition="Top">
+      <Columns>
+        <ColumnInfo Id="payment_date" Width="211" />
+        <ColumnInfo Id="payment_amount" Width="228" />
+        <ColumnInfo Id="invoice_id" Width="281" />
+        <ColumnInfo Id="customer_id" Width="432" />
+      </Columns>
+    </ListView>
+    <ListView Id="product_ListView" AllowEdit="True" NewItemRowPosition="Top">
+      <Columns>
+        <ColumnInfo Id="product_name" Width="260" />
+        <ColumnInfo Id="product_price" Width="228" SortIndex="0" SortOrder="Ascending" />
+        <ColumnInfo Id="sales_price" Width="212" SortIndex="-1" SortOrder="None" />
+        <ColumnInfo Id="sales_price2" Width="280" />
+        <ColumnInfo Id="sales_price3" Width="280" SortIndex="-1" SortOrder="None" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

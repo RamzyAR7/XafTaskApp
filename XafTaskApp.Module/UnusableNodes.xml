@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="XafTaskApp.Module.xaf_test.payment">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="invoice_id">
+          <Node Id="DataSourceCriteria@30d578d6-8c39-47f7-ba63-c36850818775" UnusableNodeName="DataSourceCriteria" />
+        </Member>
+      </OwnMembers>
+      <Node Id="ImmediatePostData@c75ee3c8-7295-438a-b7c5-aedd1b55dfb5" UnusableNodeName="ImmediatePostData" />
+    </Class>
+  </BOModel>
+  <Member Name="customer_id">
+    <Node Id="ImmediatePostData@2c128fdb-be7f-443c-b194-7cfee5be8503" UnusableNodeName="ImmediatePostData" />
+  </Member>
+</Application>
