@@ -48,10 +48,10 @@
     </DetailView>
     <ListView Id="payment_ListView" AllowEdit="True" NewItemRowPosition="Top">
       <Columns>
-        <ColumnInfo Id="payment_date" Width="211" />
-        <ColumnInfo Id="payment_amount" Width="228" />
-        <ColumnInfo Id="invoice_id" Width="281" />
-        <ColumnInfo Id="customer_id" Width="432" />
+        <ColumnInfo Id="payment_date" Width="211" Caption="Date" />
+        <ColumnInfo Id="payment_amount" Width="228" Caption="Amount" />
+        <ColumnInfo Id="invoice_id" Width="281" Caption="Invoice" />
+        <ColumnInfo Id="customer_id" Width="432" Caption="Customer" />
       </Columns>
     </ListView>
     <ListView Id="product_ListView" AllowEdit="True" NewItemRowPosition="Top">

@@ -56,6 +56,7 @@ namespace XafTaskApp.Module.BusinessObjects
         public XPCollection<invoice> invoices { get { return GetCollection<invoice>(nameof(invoices)); } }
         [Association(@"paymentReferencescustomer")]
         public XPCollection<payment> payments { get { return GetCollection<payment>(nameof(payments)); } }
+
     }
 
 }
