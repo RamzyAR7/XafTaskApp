@@ -3,6 +3,30 @@
   <BOModel>
     <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
   </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="@a2a188ba-b54a-4905-a1dc-8e4e3dfb2023" Caption="project" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="customer_ListView" ViewId="customer_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="Event_ListView" ViewId="Event_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="invoice_detail_ListView" ViewId="invoice_detail_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="invoice_ListView" ViewId="invoice_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="payment_ListView" ViewId="payment_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="product_ListView" ViewId="product_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Default" Caption="Auth">
+        <Items>
+          <Item Id="customer_ListView" Removed="True" />
+          <Item Id="Event_ListView" Removed="True" />
+          <Item Id="invoice_detail_ListView" Removed="True" />
+          <Item Id="invoice_ListView" Removed="True" />
+          <Item Id="payment_ListView" Removed="True" />
+          <Item Id="product_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
   <SchemaModules>
     <SchemaModule Name="CloneObjectModule" Version="24.1.7.0" IsNewNode="True" />
     <SchemaModule Name="SchedulerModuleBase" Version="24.1.7.0" IsNewNode="True" />
