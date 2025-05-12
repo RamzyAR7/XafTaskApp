@@ -6,9 +6,9 @@ using System.Drawing;
 
 namespace XafTaskApp.Module
 {
-    public partial class XtraReport1 : DevExpress.XtraReports.UI.XtraReport
+    public partial class CustomerInvoicesReport : DevExpress.XtraReports.UI.XtraReport
     {
-        public XtraReport1()
+        public CustomerInvoicesReport()
         {
             InitializeComponent();
         }
